@@ -71,15 +71,15 @@ export const habitRelations = relations(habits, ({ one, many }) => ({
   habitTags: many(habitTags),
 }));
 
-export const entrieRealtions = relations(entries, ({ one }) => ({
+export const entriesRelation = relations(entries, ({ one }) => ({
   habit: one(habits, {
-    fields: [entries.id],
+    fields: [entries.habitId],
     references: [habits.id],
   }),
 }));
 
 export const tagRelations = relations(tags, ({ many }) => ({
-  many: many(habitTags),
+  habitTags: many(habitTags),
 }));
 
 export const habitTagRelations = relations(habitTags, ({ one }) => ({
