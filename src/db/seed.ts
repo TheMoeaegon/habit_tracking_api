@@ -19,21 +19,21 @@ const seed = async () => {
       .values([
         {
           email: 'moee@test.com',
-          hashedPassword: 'hashedpassword',
+          password: 'hashedpassword',
           username: 'moee',
           firstName: 'Moee',
           lastName: 'Aegon',
         },
         {
           email: 'jane@test.com',
-          hashedPassword: 'hashedpassword',
+          password: 'hashedpassword',
           username: 'jane',
           firstName: 'Jane',
           lastName: 'Doe',
         },
         {
           email: 'alex@test.com',
-          hashedPassword: 'hashedpassword',
+          password: 'hashedpassword',
           username: 'alex',
           firstName: 'Alex',
           lastName: 'Smith',
